@@ -15,7 +15,7 @@ Existing WAM systems typically entangle these two factors, making it difficult t
 question: is it necessary to predict future image during inference?
 
 ```
-![[Pasted image 20260819200438.png]]![[Pasted image 20260819201711.png]]```
+![[representative_wam_paradigms.png]]![[fastwam_arc.png]]```
 ```
 Model Structure:
 During inference, Fast-WAM does not explicitly generate future observations. Instead, it keeps only the clean latent tokens of the first observation frame, processes them with the video model in a single forward pass, and uses the resulting latent world representation for direct action generation.
@@ -27,8 +27,8 @@ $$\mathcal{L}_{FM}(y)=\mathbb{E}_{y, \epsilon, t}[\|f_{\theta}(y_{t}, t, o, l)-(
 $$\mathcal{L}_{act} = \mathcal{L}_{FM}(a_{1:H}), \mathcal{L}_{vid} = \mathcal{L}_{FM}(z_{1:H}) $$
 overall
 $$\mathcal{L} = \mathcal{L}_{act}+\lambda\mathcal{L}_{vid} $$Results:
-![[Pasted image 20260819202354.png]]
-![[Pasted image 20260819202311.png]]![[Pasted image 20260819202454.png]]
+![[fastwam_res1.png]]
+![[fastwam_res2.png]]![[fastwam_res3.png]]
 
 
 ## World Action Models are Zero-shot Policies
@@ -47,7 +47,7 @@ While VLAs successfully inherit linguistic priors to generalize across diverse l
 
 > "This shifts action learning from dense state-action imitation to inverse dynamics—aligning motor commands with predicted visual futures."
 
-![[Pasted image 20260819205212.png]]
+![[dreamzero_arc.png]]
 **Model Arch:**
 
 $$
@@ -101,4 +101,4 @@ $$
 **Effect**:
 	4 denoising steps → 1 step
 	Inference latency: 350ms → 150ms (2.33× speedup). Task progress: 52% (standard, 1-step) → 74% (Flash, 1-step), only 9% below 4-step baseline (83%)
-![[Pasted image 20260819212620.png]]
+![[dreamzero_algor.png]]

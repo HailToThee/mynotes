@@ -113,4 +113,14 @@ ICL inference:
 ```
 
 
+#### Casual video-action modeling:
+
+robot trajectory is trunked into $\tau\{(x^i, a^i)\}_{i=1}^{N}$ 
+where $x_{i}$ is the video chunk and $a_i$ is the temporally aligned action chunk.
+
+target:
+$$p_\theta(x^{i+1}, a^{i+1} | x^{\leq i}, a^{\leq i}, c)$$
+joint prediction is factorized into video prediction followed by action decoding:
+$$p_\theta(x^{i+1}, a^{i+1} | x^{\leq i}, a^{\leq i}, c) = p_\theta^{vid}(x^{i+1}| x^{\leq i}, a^{\leq i}, c)*p_\theta^{act}(a^{i+1} | x^{\leq i}, a^{\leq i}, c, x^{i+1}) $$
+
 

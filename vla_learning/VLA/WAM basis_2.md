@@ -22,11 +22,11 @@ where a global instruction (e.g., stacking blocks in a specified order (red→ye
 
 因此把三个目标: linguistic reasoning, visual forecasting, and action generation 结合起来，形成一个统一的 VLA 模型。按照“语言+视觉+动作”的顺序生成
 联合分布: $$p_{\theta}(a_{t,}v_{t+k}, l_t|v_{t,}L) = p_{\theta}(l_{t}|v_{t,}L)*p_\theta(v_{t+k}|l_{t,}v_{t,}L)*p_\theta(a_t|v_{t+k}, l_{t,}v_{t,}L)$$
-![[Pasted image 20260826132413.png]]
+![[bagelVLA_arc.png]]
 
 **Inference Speed**
 如果按照最一般的想法，那么会先生成future image, 再生成action, 但是这样会很慢。因为future image本身需要很多的denoising steps
-![[Pasted image 20260826132327.png]]
+![[Types_of_dual_denoising_schemes.png]]
 Three interaction mechanisms for the Flow Matching (FM) of keyframe prediction and action generation
 
 对于scheme3 来说是很重要的，即Action不一定需要完整地生成future image, 只需要第一步的visual denosing得到的 latent KV cahce 就可以指导 action 这和Fast WAM很像

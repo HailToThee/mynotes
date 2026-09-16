@@ -23,7 +23,7 @@ design a co-training framework
 - **VI（口头指令数据）**：后训练阶段加入，专家通过语言“遥控”机器人提供的高层示范。
 
 Arc?
-![[Pasted image 20260826154056.png]]
+![[pi0.5_arc.png]]
 
 分层推理
 $$π_θ​(a_{t:t+H}​,\hat{l}∣o_t​,ℓ)=π_θ​(a_{t:t+H}​∣o_t​,\hat{l})⋅π_θ​(\hat{l}∣o_t​,ℓ)$$
