@@ -13,3 +13,5 @@ data/
 sms_spam_collection/
 instruction-data.json
 vla_learning/.obsidian/
+*.pt
+cnn/data/
