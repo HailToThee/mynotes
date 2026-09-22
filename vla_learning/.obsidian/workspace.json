@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VLA/In_Context_Learning/Zero-WAM.md",
+                "file": "VLA/RL 100.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Zero-WAM"
+              "title": "RL 100"
             }
           }
         ]
@@ -190,27 +190,28 @@
   },
   "active": "95a722deca762f05",
   "lastOpenFiles": [
-    "VLA/In_Context_Learning/IDEA.md",
-    "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
+    "VLA/Pi series.md",
+    "VLA/OpenWAM.md",
+    "VLA/ActionCodec.md",
+    "VLA/RL 100.md",
     "VLA/In_Context_Learning/Zero-WAM.md",
+    "VLA/WAM basis_1.md",
+    "openwam_arc.png",
+    "openwam_res5.png",
+    "openwam_res4.png",
+    "openwam_res3.png",
+    "openwam_res2.png",
+    "openwam_rse6.png",
+    "openwam_arc_of_ablation.png",
+    "openwam_res1.png",
+    "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
+    "VLA/In_Context_Learning/IDEA.md",
+    "VLA/VLA basis.md",
+    "VLA/WAM basis_2.md",
     "Pasted image 20260826154054.png",
     "Pasted image 20260826154049.png",
-    "VLA/Pi series.md",
-    "VLA/ActionCodec.md",
-    "VLA/WAM basis_1.md",
-    "VLA/WAM basis_2.md",
-    "fastwam_res2.png",
-    "fastwam_res1.png",
-    "fastwam_res3.png",
-    "Pasted image 20260819202450.png",
-    "dreamzero_arc.png",
-    "VLA/VLA basis.md",
     "VLA/SOP.md",
-    "fastwam_arc.png",
-    "bagelVLA_arc.png",
-    "pi0.5_arc.png",
     "record.md",
-    "VLA/RL 100.md",
     "VLA/In_Context_Learning"
   ]
 }
