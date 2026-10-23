@@ -1,4 +1,4 @@
-background:
+	background:
 ```
 Policy under Zero-shot cross task generalization must execute manipulation it never seen during training.
 In large language models, a novel task can be performed simply by specifying it in the context, without any parameter.This form of in-context learning (ICL) turns generalization into a problem of task specification.

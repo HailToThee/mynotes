@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VLA/In_Context_Learning/IDEA.md",
+                "file": "VLA/VLA basis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IDEA"
+              "title": "VLA basis"
             }
           }
         ]
@@ -190,14 +190,16 @@
   },
   "active": "843636868afeaad4",
   "lastOpenFiles": [
-    "VLA/In_Context_Learning/Zero-WAM.md",
-    "VLA/OpenWAM.md",
-    "VLA/ActionCodec.md",
-    "VLA/Pi series.md",
-    "VLA/RL 100.md",
     "VLA/WAM basis_2.md",
     "VLA/WAM basis_1.md",
+    "VLA/In_Context_Learning/IDEA.md",
     "VLA/VLA basis.md",
+    "VLA/In_Context_Learning/Zero-WAM.md",
+    "VLA/Pi series.md",
+    "VLA/OpenWAM.md",
+    "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
+    "VLA/ActionCodec.md",
+    "VLA/RL 100.md",
     "VLA/SOP.md",
     "zerowam_condition.png",
     "zerowam_arc.png",
@@ -205,8 +207,6 @@
     "Types_of_dual_denoising_schemes.png",
     "representative_wam_paradigms.png",
     "record.md",
-    "VLA/In_Context_Learning/IDEA.md",
-    "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
     "dreamzero_arc.png",
     "openwam_arc.png",
     "openwam_res5.png",

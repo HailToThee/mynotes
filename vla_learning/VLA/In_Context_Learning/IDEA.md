@@ -1,4 +1,4 @@
-
+	
 以 Zero-WAM / LingBot-VA 为例：
 
 $$
@@ -109,3 +109,20 @@ Inference
 1. 整体直接输入到input端，然后crossattn得到一个visual latent
 2. 可以参照Bahavior Prompting Policy？也是根据当前的o_t以及动作状态，取argmax(attn(cur, video chunks))得到当前对应的human帧的chunk?再根据这个chunk和下一个chunk作为input，进行输入来指导dt的生成？然而存在问题，第一点是数据问题，Bahavior Prompting Policy的训练数据中有直接对应的当前动作。第二点是embodiment gap的问题，这个能否在训练中缓解？
 3. 如果使用了状态量s_t， 对于human demo，能否也通过mamba编码成N个embedding，再使用bahavior prompting policy进行状态的匹配？这个是否会没有那么大的embodiment gap
+df
+
+如何包含past的trajectory?
+from zerowam... bahavior prompting policy, 如果不包含trajectory的话，当前帧能够提供fairly多的信息，因此未必会考虑添加的额外部分。也就是直接input进去作为context可能并不work
+
+如何把这个trajectory输入到context里面？强行关注trajectory信息。
+with post training or without post training
+if with post training
+
+1. follow zerowam等通过添加对未来帧的预测mse loss显式将video context引入进来，和上面介绍的类似
+2. 实现一种对context压缩的方法，通过post training让模型能够理解包含trajectory等信息。
+3. geometric transfer, trajectory may also be presented  in hyper latent space? 相关论文的调研
+2,3 很可能可以融合
+
+long-wam
+in context learning for robots调研1
+记忆和incontext十分类似
