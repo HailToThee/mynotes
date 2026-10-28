@@ -146,7 +146,7 @@ in context learning for robots调研1
 
 如何设计？
 
-1. 分别使用预训练 Wan VAE 和 DINOv3 对 Human Demonstration Video 进行编码，得到每一帧对应的 Latent，观察其在 Latent Space 中的演化轨迹。
+1. 分别使用预训练 Wan VAE 和 DINOv3  Phoenix对 Human Demonstration Video 进行编码，得到每一帧对应的 Latent，观察其在 Latent Space 中的演化轨迹。
     
 2. 由于 Wan 和 DINO 的特征都可以进行归一化，能否比较两者的 Latent Trajectory 是否具有相似的几何性质？例如相邻帧变化方向、轨迹曲率、局部切空间以及状态转移趋势。
     

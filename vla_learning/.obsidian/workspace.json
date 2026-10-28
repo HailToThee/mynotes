@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
+                "file": "Notes/Wan.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bahavior Prompting Policy"
+              "title": "Wan"
             }
           }
         ],
@@ -217,17 +217,17 @@
   },
   "active": "8d11d188deb83a59",
   "lastOpenFiles": [
-    "VLA/In_Context_Learning/Zero-WAM.md",
     "VLA/LongWAM.md",
+    "Notes/Wan.md",
+    "VLA/In_Context_Learning/IDEA.md",
+    "Notes/Joint Flow Matching and Autoregressive Flow Matching.md",
+    "VLA/In_Context_Learning/Zero-WAM.md",
+    "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
     "aem(mamba)-arc.png",
     "aem(mamba)-algor.png",
     "longlive-error.png",
     "longwam-rollout.png",
-    "Notes/Joint Flow Matching and Autoregressive Flow Matching.md",
-    "Notes/Wan.md",
-    "VLA/In_Context_Learning/IDEA.md",
     "longlive-error.png",
-    "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
     "longlive-streaming.png",
     "Types_of_dual_denoising_schemes.png",
     "Pasted image 20261028105547.png",

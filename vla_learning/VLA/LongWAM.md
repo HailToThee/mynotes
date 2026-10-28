@@ -27,3 +27,6 @@ Teacher forcing training: 将预测目标分解为chunk by chunk, 并行进行�
 - ![[longlive-streaming.png]]
 - Short window attention+frame sink.
 - ![[longlive-framesink.png]]
+
+
+changxiawen
