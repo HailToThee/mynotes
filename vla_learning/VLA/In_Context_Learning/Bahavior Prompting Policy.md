@@ -4,7 +4,7 @@ notification: word *human demonstration is equal to the non. behavior prompt*
 >**Algorithm?**
 >	many prior works use anguage descriptions or goal image conditions, often provide **incomplete information** about the task and desired behavior
 >	A single task demonstration is an expressive prompt representation and is already accessible
->	演示视频的表示性足矣
+>	演示视频的表示性就足够了
 
 >**Data?**
 >	Under a fixed data budget, policies trained on more tasks with fewer demonstrations per task exhibit significantly stronger prompting ability.

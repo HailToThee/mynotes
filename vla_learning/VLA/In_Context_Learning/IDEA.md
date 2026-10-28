@@ -15,7 +15,7 @@ $$
 
 Fast_WAM 提出了不必完整地预测整个 $V_{t+1}$, OpenWAM也讲到了这一点
 因为生成 $V_{t+1}$ 需要建模大量可能与 Action 无关的细节信息，例如：
-- Background
+	- Background
 - Texture
 - Appearance details
 - Pixel-level details
@@ -126,3 +126,30 @@ if with post training
 long-wam
 in context learning for robots调研1
 记忆和incontext十分类似
+
+
+
+
+1.Mamba...
+
+1. 使用预训练 Wan VAE 将 Human Demonstration Video 编码为 Visual Tokens，再通过 Mamba 建模时序信息，取最后一个 Visual Token 的 Hidden State 作为 Context Latent，输入 VLA 指导动作生成。
+    
+2. Mamba 需要学习如何保留任务相关的时序信息，可能需要额外 Pretraining，与 Minimal Training 的目标存在冲突。
+    
+3. 能否不使用单个 Token，而是将 Video 压缩为 \(N\) 个具有时序信息的 Embeddings，再根据当前 Robot Observation \(o_t\)，通过 Attention 匹配对应的 Human Demonstration 阶段，提取相关 Context 指导 Action Generation？
+![[aem(mamba)-arc.png]]
+
+![[aem(mamba)-algor.png]]
+
+
+2.latent 
+
+如何设计？
+
+1. 分别使用预训练 Wan VAE 和 DINOv3 对 Human Demonstration Video 进行编码，得到每一帧对应的 Latent，观察其在 Latent Space 中的演化轨迹。
+    
+2. 由于 Wan 和 DINO 的特征都可以进行归一化，能否比较两者的 Latent Trajectory 是否具有相似的几何性质？例如相邻帧变化方向、轨迹曲率、局部切空间以及状态转移趋势。
+    
+3. 如果两种不同预训练目标的模型得到相似的 Latent Trajectory，是否意味着其中存在相对稳定的任务动态信息？能否利用这种动态结构提取有效的 Video Context，而不需要额外预训练？
+    
+4. 进一步比较相同任务下 Human Video 和 Robot Video 的 Latent Trajectory，观察其运动方向、局部几何结构是否相似，探索能否通过共享的动态结构缓解 Embodiment Gap。

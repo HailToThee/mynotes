@@ -1,4 +1,4 @@
-	background:
+background:
 ```
 Policy under Zero-shot cross task generalization must execute manipulation it never seen during training.
 In large language models, a novel task can be performed simply by specifying it in the context, without any parameter.This form of in-context learning (ICL) turns generalization into a problem of task specification.
@@ -11,7 +11,7 @@ two-key challenges:
 *The main architecture follows lingbot-va*
 
 Solution for 2 challenges:
-> proposed a n **in-context human video generation pipeline**, uses task-sampled robot trajectories to construct semantically matched human manipulation videos.
+> proposed an **in-context human video generation pipeline**, uses task-sampled robot trajectories to construct semantically matched human manipulation videos.
   The resulting HumanGen dataset contains 74.2K human-robot ICL pairs spanning 8.6K tasks.
 
 ```
@@ -69,4 +69,4 @@ $$\mathcal{L}_{ifp} = \sum\limits_{k = 1}^{K}w_k\mathcal{L}_{fm}(x^{j_{k}}|\phi^
 ![[zerowam_condition.png]]
 上面也说了under C
 也就是说h作为一个整体，先作用于next chunk，然后再从next chunk作用到action
-这里面的公式，我们可以看到对于action部分，h并不直接作为其条件，而x_i+1作为其条件
+这里面的公式，可以看到对于action部分，h并不直接作为其条件，而x_i+1作为其条件
