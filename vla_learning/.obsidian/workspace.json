@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Wan.md",
+                "file": "VLA/In_Context_Learning/IDEA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wan"
+              "title": "IDEA"
             }
           }
         ],
@@ -217,12 +217,18 @@
   },
   "active": "8d11d188deb83a59",
   "lastOpenFiles": [
-    "VLA/LongWAM.md",
     "Notes/Wan.md",
-    "VLA/In_Context_Learning/IDEA.md",
-    "Notes/Joint Flow Matching and Autoregressive Flow Matching.md",
-    "VLA/In_Context_Learning/Zero-WAM.md",
+    "VLA/LongWAM.md",
+    "VLA/OpenWAM.md",
+    "VLA/Pi series.md",
     "VLA/In_Context_Learning/Bahavior Prompting Policy.md",
+    "VLA/In_Context_Learning/IDEA.md",
+    "VLA/In_Context_Learning/Zero-WAM.md",
+    "Notes/ELBO.md",
+    "Notes/Joint Flow Matching and Autoregressive Flow Matching.md",
+    "Pasted image 20261031170205.png",
+    "Pasted image 20261031165850.png",
+    "VLA/ActionCodec.md",
     "aem(mamba)-arc.png",
     "aem(mamba)-algor.png",
     "longlive-error.png",
@@ -231,12 +237,6 @@
     "longlive-streaming.png",
     "Types_of_dual_denoising_schemes.png",
     "Pasted image 20261028105547.png",
-    "longwam-streamingVAE.png",
-    "longlive_arc.png",
-    "Notes/ELBO.md",
-    "VLA/ActionCodec.md",
-    "VLA/Pi series.md",
-    "VLA/OpenWAM.md",
     "VLA/未命名.md",
     "VLA/VLA basis.md",
     "some_notes/ELBO_.md",
